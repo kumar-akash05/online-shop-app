@@ -7,7 +7,7 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/LondheShubham153/argocd-demos.git
+    repoURL: https://github.com/kumar-akash05/online-shop-app.git
     targetRevision: main
     path: declarative_approach/online_shop
 
@@ -22,4 +22,5 @@ spec:
     syncOptions:
       - CreateNamespace=true
     
+
 
