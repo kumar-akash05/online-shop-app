@@ -3,13 +3,14 @@ kind: Application
 metadata:
   name: online-shop-app
   namespace: argocd
+
 spec:
   project: default
 
   source:
     repoURL: https://github.com/kumar-akash05/online-shop-app.git
     targetRevision: main
-    path: declarative_approach/online_shop
+    path: .
 
   destination:
     server: https://kubernetes.default.svc
@@ -21,6 +22,3 @@ spec:
       selfHeal: true
     syncOptions:
       - CreateNamespace=true
-    
-
-
